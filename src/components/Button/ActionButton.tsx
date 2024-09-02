@@ -5,6 +5,7 @@ import StyledButton from './StyledButton';
 type ActionButtonProps = {
 	text: string,
 	link?: string,
+	onClick?: any,
 }
 
 const ActionButton = (props: ActionButtonProps) => (
@@ -13,6 +14,9 @@ const ActionButton = (props: ActionButtonProps) => (
 		size="large"
 		rel="noopener noreferrer"
 		href={props.link}
+		/* @ts-ignore */
+		target='_blank'
+		onClick={props.onClick}
 	>
 		<Typography variant="button" >
 			{props.text}

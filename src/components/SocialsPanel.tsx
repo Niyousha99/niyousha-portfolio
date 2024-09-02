@@ -6,9 +6,9 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 
 const SocialsPanel = () => (
 	<Box sx={{ display: 'flex', flexDirection: 'row', marginLeft: '-10px' }}>
-		<IconButton target="_blank" href='https://www.linkedin.com/in/niyoushar/'><LinkedInIcon /></IconButton>
-		<IconButton target="_blank" href='https://github.com/Niyousha99'><GitHubIcon /></IconButton>
-		<IconButton target="_blank" href='https://www.instagram.com/niyousha48/'><InstagramIcon /></IconButton>
+		<IconButton style={{ color: 'pink' }} target="_blank" href='https://www.linkedin.com/in/niyoushar/'><LinkedInIcon /></IconButton>
+		<IconButton style={{ color: 'pink' }} target="_blank" href='https://github.com/Niyousha99'><GitHubIcon /></IconButton>
+		<IconButton style={{ color: 'pink' }} target="_blank" href='https://www.instagram.com/niyousha48/'><InstagramIcon /></IconButton>
 	</Box>
 );
 

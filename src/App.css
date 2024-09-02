@@ -1,5 +1,5 @@
 .App {
-  padding: 0 1em;
+  padding: 1em;
   text-align: center;
   background-color: #3A3156;
   min-height: 100vh;
@@ -9,5 +9,5 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: #DBDFE9;
-  gap: 2em;
+  gap: 1em;
 }

@@ -16,11 +16,14 @@ const About = () => {
 						B.Sc. Software Engineering {<br />} Software Developer
 					</Typography>
 				</div>
-				<ActionButton
-					link='mailto:niyousha.raeesinejad@gmail.com'
-					text='Get in Touch!'
-				/>
-				<SocialsPanel />
+				<Box sx={{ display: 'flex', flexDirection: 'column', gap: '0.2em' }}>
+					<ActionButton
+						link='mailto:niyousha.raeesinejad@gmail.com'
+						text='Get in Touch!'
+
+					/>
+					<SocialsPanel />
+				</Box>
 			</Box>
 			<Box
 				component="img"

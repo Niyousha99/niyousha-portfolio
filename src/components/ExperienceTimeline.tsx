@@ -13,7 +13,7 @@ import { Icon } from '@mui/material';
 const ExperienceTimeline = () => {
 	return (
 		<Timeline position="alternate">
-			<Typography variant="h4" sx={{ marginBottom: '1em' }}>
+			<Typography variant="h4" sx={{ marginBottom: '1em', color: '#2A201E' }}>
 				EXPERIENCE
 			</Typography>
 			{experience.map((experienceItem: ExperienceType) => {
@@ -23,7 +23,7 @@ const ExperienceTimeline = () => {
 							sx={{ m: 'auto 0' }}
 							align="right"
 							variant="body2"
-							color='#64718D'
+							color='#866D6B'
 						>
 							{experienceItem.date}
 						</TimelineOppositeContent>

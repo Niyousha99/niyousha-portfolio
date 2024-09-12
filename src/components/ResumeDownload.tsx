@@ -62,7 +62,7 @@ const ResumeDownload = () => {
                 {error}
             </Alert>}
             {loading && <Box sx={{ display: 'flex', marginTop: '5px', justifyContent: 'center' }}>
-                <CircularProgress size={24} sx={{ color: 'pink' }} />
+                <CircularProgress size={24} sx={{ color: '#8d8079' }} />
             </Box>}
             <Fade in={downloaded} timeout={1000} >
                 <Alert sx={{ marginTop: '5px', justifyContent: 'center' }} severity="success">

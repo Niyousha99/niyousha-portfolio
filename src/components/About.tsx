@@ -10,9 +10,9 @@ const About = () => {
 			<Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'start', textAlign: 'left', gap: '1em' }}>
 				<div>
 					<Typography variant="h4" sx={{ display: 'inline-flex', flexWrap: 'wrap', alignItems: 'baseline', gap: '0.3em' }}>
-						Hello, I'm <Typography variant="h3" color={'pink'}>Niyousha</Typography>
+						Hello, I'm <Typography variant="h3" color={'#8d6c64'}>Niyousha</Typography>
 					</Typography>
-					<Typography variant="subtitle1" sx={{ lineHeight: 1 }}>
+					<Typography variant="subtitle1" color={'#866D6B'} sx={{ lineHeight: 1, }}>
 						B.Sc. Software Engineering {<br />} Software Developer
 					</Typography>
 				</div>

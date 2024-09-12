@@ -29,7 +29,7 @@ const experienceFillers: ExperienceType[] = [
             ''
         ],
         icon: {
-            overrideIconStyle: { width: '14px', height: '14px', bgcolor: '#DBDFE940' },
+            overrideIconStyle: { width: '14px', height: '14px', bgcolor: '#b8b6b0' },
         }
     },
     {
@@ -40,7 +40,7 @@ const experienceFillers: ExperienceType[] = [
             ''
         ],
         icon: {
-            overrideIconStyle: { width: '10px', height: '10px', bgcolor: '#DBDFE940' },
+            overrideIconStyle: { width: '10px', height: '10px', bgcolor: '#b8b6b0' },
         }
     },
     {
@@ -51,7 +51,7 @@ const experienceFillers: ExperienceType[] = [
             ''
         ],
         icon: {
-            overrideIconStyle: { width: '6px', height: '6px', bgcolor: '#DBDFE940' },
+            overrideIconStyle: { width: '6px', height: '6px', bgcolor: '#b8b6b0' },
         }
     }
 ]
@@ -66,7 +66,7 @@ export const experience: ExperienceType[] = [
         ],
         icon: {
             component: OilBarrelIcon,
-            overrideIconStyle: { bgcolor: 'pink' },
+            overrideIconStyle: { bgcolor: '#866D6B' },
         }
     },
     {
@@ -78,7 +78,7 @@ export const experience: ExperienceType[] = [
         ],
         icon: {
             component: CorporateFareIcon,
-            overrideIconStyle: { bgcolor: 'pink' },
+            overrideIconStyle: { bgcolor: '#866D6B' },
         }
     },
     {
@@ -90,7 +90,7 @@ export const experience: ExperienceType[] = [
         ],
         icon: {
             component: OilBarrelIcon,
-            overrideIconStyle: { bgcolor: 'pink' },
+            overrideIconStyle: { bgcolor: '#866D6B' },
         }
     },
     {
@@ -102,7 +102,7 @@ export const experience: ExperienceType[] = [
         ],
         icon: {
             component: DvrIcon,
-            overrideIconStyle: { bgcolor: 'pink' },
+            overrideIconStyle: { bgcolor: '#866D6B' },
         }
     },
     {
@@ -114,7 +114,7 @@ export const experience: ExperienceType[] = [
         ],
         icon: {
             component: LibraryBooksIcon,
-            overrideIconStyle: { bgcolor: 'pink' },
+            overrideIconStyle: { bgcolor: '#866D6B' },
         }
     },
     {
@@ -126,7 +126,7 @@ export const experience: ExperienceType[] = [
         ],
         icon: {
             component: SchoolIcon,
-            overrideIconStyle: { bgcolor: 'pink' },
+            overrideIconStyle: { bgcolor: '#866D6B' },
         }
     },
     ...experienceFillers

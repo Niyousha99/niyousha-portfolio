@@ -4,9 +4,9 @@ import Button, { ButtonProps } from '@mui/material/Button';
 const StyledButton = styled(Button)<ButtonProps>(({ theme }) => ({
 	border: 0,
 	color: '#DBDFE9',
-	backgroundColor: '#64718D',
+	backgroundColor: '#8d6c64',
 	'&:hover': {
-		backgroundColor: '#64718D',
+		backgroundColor: '#1C1614',
 		boxShadow: '2px 2px 5px 2px #DBDFE940',
 	},
 }));

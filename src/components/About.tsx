@@ -6,7 +6,7 @@ import SocialsPanel from './SocialsPanel';
 
 const About = () => {
 	return (
-		<Box sx={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', gap: '1em', padding: '1em 0' }}>
+		<Box sx={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', gap: '1em', padding: '1em 0', justifyContent: 'center' }}>
 			<Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'start', textAlign: 'left', gap: '1em' }}>
 				<div>
 					<Typography variant="h4" sx={{ display: 'inline-flex', flexWrap: 'wrap', alignItems: 'baseline', gap: '0.3em' }}>
@@ -25,6 +25,7 @@ const About = () => {
 					<SocialsPanel />
 				</Box>
 			</Box>
+
 			<Box
 				component="img"
 				sx={{
@@ -37,6 +38,7 @@ const About = () => {
 				alt="Picture of Niyousha at a cafe"
 				src={Profile}
 			/>
+
 		</Box >
 
 	)

@@ -23,6 +23,7 @@ const ExperienceTimeline = () => {
 							sx={{ m: 'auto 0' }}
 							align="right"
 							variant="body2"
+							color='#64718D'
 						>
 							{experienceItem.date}
 						</TimelineOppositeContent>

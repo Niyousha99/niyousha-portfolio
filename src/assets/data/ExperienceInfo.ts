@@ -1,6 +1,8 @@
 import OilBarrelIcon from '@mui/icons-material/OilBarrel';
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import DvrIcon from '@mui/icons-material/Dvr';
 import SchoolIcon from '@mui/icons-material/School';
+import CorporateFareIcon from '@mui/icons-material/CorporateFare';
+import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
 import { SxProps } from '@mui/material';
 
 type ExperienceIconType = {
@@ -16,7 +18,7 @@ export type ExperienceType = {
     icon: ExperienceIconType
 }
 
-export const RESUME_LINK = 'https://www.overleaf.com/project/611d97a9cb306e33a0cfdc26/output/output.pdf?dl=1&ver=2'
+export const RESUME_OVERLEAF_LINK = 'https://www.overleaf.com/project/611d97a9cb306e33a0cfdc26/output/output.pdf?dl=1&ver=2'
 
 const experienceFillers: ExperienceType[] = [
     {
@@ -64,7 +66,7 @@ export const experience: ExperienceType[] = [
         ],
         icon: {
             component: OilBarrelIcon,
-            overrideIconStyle: { bgcolor: 'orange' },
+            overrideIconStyle: { bgcolor: 'pink' },
         }
     },
     {
@@ -75,8 +77,8 @@ export const experience: ExperienceType[] = [
             ''
         ],
         icon: {
-            component: ArrowForwardIosIcon,
-            overrideIconStyle: { bgcolor: '#8bffa5' }
+            component: CorporateFareIcon,
+            overrideIconStyle: { bgcolor: 'pink' },
         }
     },
     {
@@ -88,7 +90,7 @@ export const experience: ExperienceType[] = [
         ],
         icon: {
             component: OilBarrelIcon,
-            overrideIconStyle: { bgcolor: 'orange' }
+            overrideIconStyle: { bgcolor: 'pink' },
         }
     },
     {
@@ -99,8 +101,8 @@ export const experience: ExperienceType[] = [
             ''
         ],
         icon: {
-            component: ArrowForwardIosIcon,
-            overrideIconStyle: { bgcolor: '#8bffa5' }
+            component: DvrIcon,
+            overrideIconStyle: { bgcolor: 'pink' },
         }
     },
     {
@@ -111,8 +113,8 @@ export const experience: ExperienceType[] = [
             ''
         ],
         icon: {
-            component: SchoolIcon,
-            overrideIconStyle: { bgcolor: 'red' }
+            component: LibraryBooksIcon,
+            overrideIconStyle: { bgcolor: 'pink' },
         }
     },
     {
@@ -124,7 +126,7 @@ export const experience: ExperienceType[] = [
         ],
         icon: {
             component: SchoolIcon,
-            overrideIconStyle: { bgcolor: 'red' }
+            overrideIconStyle: { bgcolor: 'pink' },
         }
     },
     ...experienceFillers

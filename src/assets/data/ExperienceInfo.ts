@@ -4,6 +4,7 @@ import SchoolIcon from '@mui/icons-material/School';
 import CorporateFareIcon from '@mui/icons-material/CorporateFare';
 import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
 import { SxProps } from '@mui/material';
+import { COLORS } from '../style/colors';
 
 type ExperienceIconType = {
     component?: any,
@@ -29,7 +30,7 @@ const experienceFillers: ExperienceType[] = [
             ''
         ],
         icon: {
-            overrideIconStyle: { width: '14px', height: '14px', bgcolor: '#b8b6b0' },
+            overrideIconStyle: { width: '14px', height: '14px', bgcolor: COLORS.icon.blank },
         }
     },
     {
@@ -66,7 +67,7 @@ export const experience: ExperienceType[] = [
         ],
         icon: {
             component: OilBarrelIcon,
-            overrideIconStyle: { bgcolor: '#866D6B' },
+            overrideIconStyle: { bgcolor: COLORS.icon.fill },
         }
     },
     {
@@ -78,7 +79,7 @@ export const experience: ExperienceType[] = [
         ],
         icon: {
             component: CorporateFareIcon,
-            overrideIconStyle: { bgcolor: '#866D6B' },
+            overrideIconStyle: { bgcolor: COLORS.icon.fill },
         }
     },
     {
@@ -90,7 +91,7 @@ export const experience: ExperienceType[] = [
         ],
         icon: {
             component: OilBarrelIcon,
-            overrideIconStyle: { bgcolor: '#866D6B' },
+            overrideIconStyle: { bgcolor: COLORS.icon.fill },
         }
     },
     {
@@ -102,7 +103,7 @@ export const experience: ExperienceType[] = [
         ],
         icon: {
             component: DvrIcon,
-            overrideIconStyle: { bgcolor: '#866D6B' },
+            overrideIconStyle: { bgcolor: COLORS.icon.fill },
         }
     },
     {
@@ -114,7 +115,7 @@ export const experience: ExperienceType[] = [
         ],
         icon: {
             component: LibraryBooksIcon,
-            overrideIconStyle: { bgcolor: '#866D6B' },
+            overrideIconStyle: { bgcolor: COLORS.icon.fill},
         }
     },
     {
@@ -126,7 +127,7 @@ export const experience: ExperienceType[] = [
         ],
         icon: {
             component: SchoolIcon,
-            overrideIconStyle: { bgcolor: '#866D6B' },
+            overrideIconStyle: { bgcolor: COLORS.icon.fill },
         }
     },
     ...experienceFillers

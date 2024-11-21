@@ -47,6 +47,7 @@ const ExperienceTimeline = () => {
                   style={{ textDecoration: "none", color: COLORS.primary }}
                   href={experienceItem.url}
                   target="_blank"
+                  rel="noreferrer"
                 >
                   {experienceItem.location}
                 </a>

@@ -13,7 +13,7 @@ import { COLORS } from "../assets/style/colors";
 
 const ExperienceTimeline = () => {
   return (
-    <Timeline position="alternate">
+    <Timeline position="left">
       <Typography
         variant="h4"
         sx={{ marginBottom: "1em", color: COLORS.title }}
@@ -42,7 +42,15 @@ const ExperienceTimeline = () => {
               <Typography variant="h6" component="span">
                 {experienceItem.title}
               </Typography>
-              <Typography>{experienceItem.location}</Typography>
+              <Typography>
+                <a
+                  style={{ textDecoration: "none", color: COLORS.primary }}
+                  href={experienceItem.url}
+                  target="_blank"
+                >
+                  {experienceItem.location}
+                </a>
+              </Typography>
             </TimelineContent>
           </TimelineItem>
         );

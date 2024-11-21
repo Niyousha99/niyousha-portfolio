@@ -15,6 +15,7 @@ export type ExperienceType = {
     title: string,
     date: string,
     location: string,
+    url: string,
     content: string[],
     icon: ExperienceIconType
 }
@@ -26,6 +27,7 @@ const experienceFillers: ExperienceType[] = [
         title: '',
         date: '',
         location: '',
+        url: '',
         content: [
             ''
         ],
@@ -37,6 +39,7 @@ const experienceFillers: ExperienceType[] = [
         title: '',
         date: '',
         location: '',
+        url: '',
         content: [
             ''
         ],
@@ -48,6 +51,7 @@ const experienceFillers: ExperienceType[] = [
         title: '',
         date: '',
         location: '',
+        url: '',
         content: [
             ''
         ],
@@ -62,6 +66,7 @@ export const experience: ExperienceType[] = [
         title: 'Software Developer',
         date: 'May 2023 - Present',
         location: 'Pason Systems',
+        url: 'https://www.pason.com/',
         content: [
             ''
         ],
@@ -74,6 +79,7 @@ export const experience: ExperienceType[] = [
         title: 'President',
         date: 'May 2022 - May 2024',
         location: 'Tech Start UCalgary',
+        url: 'https://techstartucalgary.com/',
         content: [
             ''
         ],
@@ -86,6 +92,7 @@ export const experience: ExperienceType[] = [
         title: 'Software Developer Intern',
         date: 'May 2021 - August 2023',
         location: 'Pason Systems',
+        url: 'https://www.pason.com/',
         content: [
             ''
         ],
@@ -98,6 +105,7 @@ export const experience: ExperienceType[] = [
         title: 'Website Team Lead',
         date: 'September 2021 - May 2022',
         location: 'Tech Start UCalgary',
+        url: 'https://techstartucalgary.com/',
         content: [
             ''
         ],
@@ -110,6 +118,7 @@ export const experience: ExperienceType[] = [
         title: 'Research Associate',
         date: 'May 2020 - August 2023',
         location: 'University of Calgary',
+        url: 'https://ucalgary.ca/',
         content: [
             ''
         ],
@@ -122,6 +131,7 @@ export const experience: ExperienceType[] = [
         title: 'Learning Assistant',
         date: 'September 2019 - May 2023',
         location: 'University of Calgary',
+        url: 'https://ucalgary.ca/',
         content: [
             ''
         ],

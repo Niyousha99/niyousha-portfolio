@@ -124,7 +124,7 @@ export const experience: ExperienceType[] = [
         ],
         icon: {
             component: LibraryBooksIcon,
-            overrideIconStyle: { bgcolor: COLORS.icon.fill},
+            overrideIconStyle: { bgcolor: COLORS.icon.fill },
         }
     },
     {

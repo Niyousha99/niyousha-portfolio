@@ -1,11 +1,11 @@
-import "./App.css";
 import About from "./components/About";
 import ExperienceTimeline from "./components/ExperienceTimeline";
-import ResumeDownload from "./components/ResumeDownload";
+// import ResumeDownload from "./components/ResumeDownload";
 import ScrollToTopButton from "./components/Button/ScrollToTopButton";
+import "./App.css";
 
 function App() {
-  const handleClick = (event: React.MouseEvent<HTMLDivElement>) => {
+  const handleClick = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <About />
       <ExperienceTimeline />
-      <ResumeDownload />
+      {/* <ResumeDownload /> */}
       <ScrollToTopButton handleClick={handleClick} />
     </div>
   );

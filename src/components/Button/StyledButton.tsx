@@ -1,8 +1,8 @@
 import { styled } from "@mui/material/styles";
-import Button, { ButtonProps } from "@mui/material/Button";
+import Button from "@mui/material/Button";
 import { COLORS } from "../../assets/style/colors";
 
-const StyledButton = styled(Button)<ButtonProps>(({ theme }) => ({
+const StyledButton = styled(Button)({
   border: 0,
   color: COLORS.button.color,
   backgroundColor: COLORS.button.backgroundColor,
@@ -10,6 +10,6 @@ const StyledButton = styled(Button)<ButtonProps>(({ theme }) => ({
     backgroundColor: COLORS.button.hoverBackgroundColor,
     boxShadow: `2px 2px 5px 2px ${COLORS.button.color}`,
   },
-}));
+}) as typeof Button;
 
 export default StyledButton;

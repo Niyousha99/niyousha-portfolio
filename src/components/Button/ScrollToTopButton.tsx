@@ -2,19 +2,19 @@ import { Box, Fab, Fade, useScrollTrigger } from "@mui/material";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 
 type ScrollToTopButtonProps = {
-  handleClick: (event: React.MouseEvent<HTMLDivElement>) => void;
+  handleClick: () => void;
 };
 
-const ScrollToTopButton = (props: ScrollToTopButtonProps) => {
+const ScrollToTopButton = ({ handleClick }: ScrollToTopButtonProps) => {
   const trigger = useScrollTrigger({
-    target: window,
     disableHysteresis: true,
     threshold: 100,
   });
+
   return (
     <Fade in={trigger}>
       <Box
-        onClick={props.handleClick}
+        onClick={handleClick}
         role="presentation"
         sx={{ position: "fixed", bottom: 16, right: 16 }}
       >

@@ -1,13 +1,12 @@
 import { useState } from "react";
+import { Alert, Box, CircularProgress, Fade } from "@mui/material";
 import ActionButton from "./Button/ActionButton";
-import { Alert, Box, CircularProgress } from "@mui/material";
-import { Fade } from "@mui/material";
 import { COLORS } from "../assets/style/colors";
 
 const ResumeDownload = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [downloaded, setDownloaded] = useState<boolean>(false);
+  const [downloaded, setDownloaded] = useState(false);
 
   const downloadResume = async () => {
     setLoading(true);
@@ -40,8 +39,12 @@ const ResumeDownload = () => {
       link.remove();
 
       window.URL.revokeObjectURL(url);
-    } catch (err: any) {
-      setError(err.message || "An error occurred during the download.");
+    } catch (err: unknown) {
+      const message =
+        err instanceof Error
+          ? err.message
+          : "An error occurred during the download.";
+      setError(message);
     } finally {
       setLoading(false);
       setDownloaded(true);

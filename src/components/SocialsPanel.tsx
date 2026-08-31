@@ -2,7 +2,7 @@ import Box from "@mui/material/Box";
 import { IconButton } from "@mui/material";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import InstagramIcon from "@mui/icons-material/Instagram";
+import XIcon from "@mui/icons-material/X";
 import { COLORS } from "../assets/style/colors";
 
 const SocialsPanel = () => (
@@ -13,9 +13,10 @@ const SocialsPanel = () => (
       <IconButton
         style={{ color: COLORS.icon.fill }}
         target="_blank"
-        href="https://www.linkedin.com/in/niyoushar/"
+        href="https://x.com/real_niyousha"
+        aria-label="X"
       >
-        <LinkedInIcon />
+        <XIcon />
       </IconButton>
       <IconButton
         style={{ color: COLORS.icon.fill }}
@@ -27,9 +28,9 @@ const SocialsPanel = () => (
       <IconButton
         style={{ color: COLORS.icon.fill }}
         target="_blank"
-        href="https://www.instagram.com/niyousha48/"
+        href="https://www.linkedin.com/in/niyoushar/"
       >
-        <InstagramIcon />
+        <LinkedInIcon />
       </IconButton>
     </Box>
   </Box>

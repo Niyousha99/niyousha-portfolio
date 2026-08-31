@@ -1,27 +1,36 @@
-import * as React from 'react';
-import { Typography } from '@mui/material';
-import StyledButton from './StyledButton';
+import { memo } from "react";
+import { Typography } from "@mui/material";
+import StyledButton from "./StyledButton";
 
 type ActionButtonProps = {
-	text: string,
-	link?: string,
-	onClick?: any,
-}
+  text: string;
+  link?: string;
+  onClick?: () => void;
+};
 
-const ActionButton = (props: ActionButtonProps) => (
-	<StyledButton
-		variant="contained"
-		size="large"
-		rel="noopener noreferrer"
-		href={props.link}
-		/* @ts-ignore */
-		target='_blank'
-		onClick={props.onClick}
-	>
-		<Typography variant="button" >
-			{props.text}
-		</Typography>
-	</StyledButton>
-)
+const ActionButton = ({ text, link, onClick }: ActionButtonProps) => {
+  const label = <Typography variant="button">{text}</Typography>;
 
-export default React.memo(ActionButton);
+  if (link) {
+    return (
+      <StyledButton
+        variant="contained"
+        size="large"
+        component="a"
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {label}
+      </StyledButton>
+    );
+  }
+
+  return (
+    <StyledButton variant="contained" size="large" onClick={onClick}>
+      {label}
+    </StyledButton>
+  );
+};
+
+export default memo(ActionButton);

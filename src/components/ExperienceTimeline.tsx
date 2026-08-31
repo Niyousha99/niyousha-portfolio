@@ -1,4 +1,4 @@
-import * as React from "react";
+import { memo } from "react";
 import Timeline from "@mui/lab/Timeline";
 import TimelineItem from "@mui/lab/TimelineItem";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
@@ -7,57 +7,78 @@ import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import Typography from "@mui/material/Typography";
-import { experience, ExperienceType } from "../assets/data/ExperienceInfo";
 import { Icon } from "@mui/material";
+import { experience, type ExperienceType } from "../assets/data/ExperienceInfo";
 import { COLORS } from "../assets/style/colors";
 
 const ExperienceTimeline = () => {
   return (
-    <Timeline position="left">
-      <Typography
-        variant="h4"
-        sx={{ marginBottom: "1em", color: COLORS.title }}
-      >
-        EXPERIENCE
+    <>
+      <Typography variant="h4" sx={{ color: COLORS.title }}>
+        the lore
       </Typography>
-      {experience.map((experienceItem: ExperienceType) => {
-        return (
-          <TimelineItem>
-            <TimelineOppositeContent
-              sx={{ m: "auto 0" }}
-              align="right"
-              variant="body2"
-              color={COLORS.primary}
+      <Timeline
+        position="left"
+        sx={{
+          width: "100%",
+          maxWidth: 720,
+          mx: "auto",
+          px: 0,
+          py: 0,
+        }}
+      >
+        {experience.map((experienceItem: ExperienceType, index) => {
+          return (
+            <TimelineItem
+              key={`${experienceItem.title}-${experienceItem.date}-${index}`}
             >
-              {experienceItem.date}
-            </TimelineOppositeContent>
-            <TimelineSeparator>
-              <TimelineConnector />
-              <TimelineDot sx={experienceItem.icon.overrideIconStyle}>
-                <Icon component={experienceItem.icon.component} />
-              </TimelineDot>
-              <TimelineConnector />
-            </TimelineSeparator>
-            <TimelineContent sx={{ py: "12px", px: 2 }}>
-              <Typography variant="h6" component="span">
-                {experienceItem.title}
-              </Typography>
-              <Typography>
-                <a
-                  style={{ textDecoration: "none", color: COLORS.primary }}
-                  href={experienceItem.url}
-                  target="_blank"
-                  rel="noreferrer"
+              <TimelineOppositeContent
+                sx={{
+                  m: "auto 0",
+                  pl: 1.5,
+                  textAlign: "left",
+                  color: COLORS.primary,
+                }}
+                variant="body2"
+              >
+                {experienceItem.date}
+              </TimelineOppositeContent>
+              <TimelineSeparator>
+                {index > 0 ? <TimelineConnector /> : null}
+                <TimelineDot sx={experienceItem.icon.overrideIconStyle}>
+                  {experienceItem.icon.component ? (
+                    <Icon component={experienceItem.icon.component} />
+                  ) : null}
+                </TimelineDot>
+                <TimelineConnector />
+              </TimelineSeparator>
+              <TimelineContent
+                sx={{ py: "12px", px: 2, pr: 1.5, textAlign: "right" }}
+              >
+                <Typography
+                  variant="h6"
+                  component="span"
+                  sx={{ whiteSpace: { xs: "normal", sm: "nowrap" } }}
                 >
-                  {experienceItem.location}
-                </a>
-              </Typography>
-            </TimelineContent>
-          </TimelineItem>
-        );
-      })}
-    </Timeline>
+                  {experienceItem.title}
+                </Typography>
+                <Typography>
+                  <a
+                    style={{ textDecoration: "none", color: COLORS.primary }}
+                    href={experienceItem.url}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {experienceItem.location}
+                  </a>
+                </Typography>
+              </TimelineContent>
+            </TimelineItem>
+          );
+        })}
+      </Timeline>
+    </>
   );
 };
 
-export default React.memo(ExperienceTimeline);
+export default memo(ExperienceTimeline);

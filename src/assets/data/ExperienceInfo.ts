@@ -1,13 +1,15 @@
+import type { SvgIconComponent } from '@mui/icons-material';
+import StorefrontIcon from '@mui/icons-material/Storefront';
 import OilBarrelIcon from '@mui/icons-material/OilBarrel';
 import DvrIcon from '@mui/icons-material/Dvr';
 import SchoolIcon from '@mui/icons-material/School';
 import CorporateFareIcon from '@mui/icons-material/CorporateFare';
 import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
-import { SxProps } from '@mui/material';
+import type { SxProps } from '@mui/material';
 import { COLORS } from '../style/colors';
 
 type ExperienceIconType = {
-    component?: any,
+    component?: SvgIconComponent,
     overrideIconStyle: SxProps,
 }
 
@@ -63,8 +65,21 @@ const experienceFillers: ExperienceType[] = [
 
 export const experience: ExperienceType[] = [
     {
+        title: 'Product Engineer',
+        date: 'October 2025 - Present',
+        location: 'Aftersell by Rokt',
+        url: 'https://www.aftersell.com/',
+        content: [
+            ''
+        ],
+        icon: {
+            component: StorefrontIcon,
+            overrideIconStyle: { bgcolor: COLORS.icon.fill },
+        }
+    },
+    {
         title: 'Software Developer',
-        date: 'May 2023 - Present',
+        date: 'May 2023 - September 2025',
         location: 'Pason Systems',
         url: 'https://www.pason.com/',
         content: [
